@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("backgrounds.jpeg");
+}
+
+.container {
+    background-color: #e7aa01fd; /* cyan color for the container */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#Timerz {
+        font-size: 24px;           /* Increase font size */
+        font-weight: bold;         /* Make the text bold */
+        color: #ff0000;            /* Red color for the timer */
+        padding: 5px 10px;         /* Add some padding */
+        border: 3px solid #ff0000; /* Red border to match the text */
+        border-radius: 5px;        /* Rounded corners */
+        background-color: #000;    /* Black background to make the text stand out */
+        display: inline-block;     /* Adjust size to fit content */
+    
+}
+
+#timer {
+    font-size: 24px;           /* Increase font size */
+    font-weight: bold;         /* Make the text bold */
+    color: #ff0000;            /* Red color for the timer */
+    padding: 5px 10px;         /* Add some padding */
+    border: 3px solid #ff0000; /* Red border to match the text */
+    border-radius: 5px;        /* Rounded corners */
+    background-color: #000;    /* Black background to make the text stand out */
+    display: inline-block;     /* Adjust size to fit content */
+}
+
+@keyframes blink {
+    0% { color: #ff0000; }
+    50% { color: #ffff00; }  /* Yellow color for the blink */
+    100% { color: #ff0000; }
+}
+
+.blink {
+    animation: blink 1s infinite; /* Blink every second */
+}
+
+.timer-label {
+    background-color: #cf0707; /* Adjust color as needed */
+    padding: 5px 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Optional: Rounded corners */
+  }
+
+.h1 {
+    color: #ce2020;
+    margin-bottom: 20px;
+    font-size: 24px;
+    outline: 2px;
+    outline-color: black;
+}
+
+.roll-btn {
+    background-color: #ff8c00; /* orange color for the roll button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 4px #d97c00;
+    transition: box-shadow 0.2s;
+}
+
+.roll-btn:active {
+    box-shadow: 0 2px #d97c00;
+}
+
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.color-square {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #333;
+}
+
+.yellow { background-color: yellow; }
+.white { background-color: white; }
+.pink { background-color: magenta; }
+.blue { background-color: blue; }
+.red { background-color: red; }
+.green { background-color: limegreen; }
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
